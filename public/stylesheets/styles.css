@@ -5,9 +5,9 @@
   }
   
   body {
-    overflow: auto;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
 
   /* NAVBAR */
@@ -109,8 +109,6 @@ li {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    font-family: blanket, sans-serif;
-    font-weight: 400;
     font-style: normal;
     }
   
@@ -134,13 +132,17 @@ li {
   }
   
   .left-slide h1 {
-    font-size: 40px;
+    font-size: 70px;
+    max-width: 80px;
+    line-height: 80px;
     margin-bottom: 10px;
-    margin-top: -30px;
-    padding-bottom: 150px;
-    font-family: blanket, sans-serif;
-    font-weight: 400;
+    margin-right: 30px;
+    padding-top: 50px;
+    font-family: "scrivano", serif;
+    font-weight: 700;
     font-style: normal;
+    color: #f9f9f9;
+    justify-content: center;
   }
   
   .right-slide {
@@ -200,15 +202,33 @@ li {
       }
   }
 
+
+  @media (max-width: 1200px){
+    .left-slide h1{
+      font-size: 40px;
+    }
+    button{
+      display: none;
+    }
+  }
+
   /* TEXT SECTION */
 
   .text{
     text-align: center;
-    padding-bottom: 20px;
-    font-family: larken, sans-serif;
+    padding-bottom: 40px;
+    font-family: "scrivano", serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #f9f9f9;
+    
   }
+
+  .text-section{
+    justify-content: center;
+    padding-right: 20px;
+  }
+  
 
   .list-item-text {
     padding: 20px;
@@ -216,6 +236,14 @@ li {
     list-style-type: none;
     font-size: 30px;
     font-weight: 300;
+  }
+
+  .text h1{
+    padding-top: 40px;
+    font-size: 70px;
+    text-decoration: underline;
+    font-family: "lobster", sans-serif;
+    color: #000;
   }
 
 
@@ -229,6 +257,39 @@ li {
 
 .handshake-img {
   justify-content: center;
+}
+
+@media(max-width: 1400px){
+  .list-item-text{
+    font-size: 20px;
+  }
+  .text-section{
+    width: 100vw;
+    padding: 0;
+  }
+  .text {
+    width: 95vw;
+    padding: 0;
+  }
+  .handshake-img{
+    display: none;
+  }
+  .text{
+    padding: 0;
+  }
+}
+
+
+@media(max-width: 800px){
+  .handshake-img{
+    display: none;
+  }
+  .text h1{
+   font-size: 30px;
+  }
+  .list-item-text{
+    font-size: 20px;
+  }
 }
 
   /* EMAIL SIGN IN (MAKE RESPONSIVE) */ 
@@ -249,45 +310,19 @@ section{
 
   .form-container {
     background-color: #0A043C transparent;
-    padding: 20px 40px;
+    /* padding: 20px 40px; */
     border-radius: 5px;
     padding: 50px;
     background: rgba(0,0,0,0.3);
-    
+
   }
   
   .form-container h1 {
     text-align: center;
     margin-bottom: 30px;
     font-family: 'Josefin Sans', sans-serif;
-  }
-  
-/*   
-  .btn {
-    cursor: pointer;
-    display: inline-block;
-    width: 100%;
-    background: lightblue;
-    padding: 15px;
-    font-family: inherit;
-    font-size: 16px;
-    border: 0;
-    border-radius: 5px;
-    justify-content: center;
-    
-  } */
-  
-  /* .btn:focus {
-    outline: 0;
-  } */
-  
-  /* .btn:active {
-    transform: scale(0.98);
-    box-shadow: #222;
-  } */
-  
-  .text {
-    margin-top: 30px;
+    font-size: 30px;
+    color: #f9f9f9;
   }
   
   .form-control {
@@ -382,6 +417,16 @@ section{
       opacity: 0;
     }
   }
+  
+
+  @media(max-width: 1200px) {
+    .ripple{
+      padding: 10px;
+      font-size: 15px
+    }
+    
+  }
+  
 
   @media(max-width: 600px) {
     button{
@@ -394,12 +439,14 @@ section{
 
 .contact {
   width: 100vw;
-  height: 30vw;
+  height: 20vw;
   text-align: center;
-  padding: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 3rem;
   font-family: 'Josefin Sans', sans-serif;
   background-color: #1450A3;
-  
+  justify-content: center;
 }
 
 .contact h1 {
@@ -408,6 +455,7 @@ section{
   color: #fff;
   font-family: "lobster", sans-serif;
   font-weight: 100;
+  font-size: 70px;
 }
 
 .contact li {
@@ -446,6 +494,8 @@ hr {
 .cash-offer {
   padding: 40px 40px;
   font-family: "lobster", sans-serif;
+  background-color: #f9f9f9;
+  width: 100vw;
 }
 
 h1{
@@ -523,6 +573,7 @@ h1{
   align-items: center;
   font-size: 30px;
   line-height: 2.5em;
-  font-weight: 600;
-  font-family: "blanket", sans-serif;
+  font-family: "scrivano", serif;
+  font-weight: 700;
+  font-style: normal;
 }

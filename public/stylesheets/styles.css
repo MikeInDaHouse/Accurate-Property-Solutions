@@ -207,12 +207,24 @@ li {
     .left-slide h1{
       font-size: 40px;
     }
-    button{
-      display: none;
-    }
   }
 
+
+  @media(max-width: 800px){
+  .slider-container .action-buttons button{
+    display: none;
+  }
+  }
+
+
+
+
+
+
   /* TEXT SECTION */
+
+
+  
 
   .text{
     text-align: center;
@@ -221,13 +233,9 @@ li {
     font-weight: 400;
     font-style: normal;
     background-color: #f9f9f9;
-    
+    width: 100vw;
   }
 
-  .text-section{
-    justify-content: center;
-    padding-right: 20px;
-  }
   
 
   .list-item-text {
@@ -263,14 +271,7 @@ li {
   .list-item-text{
     font-size: 20px;
   }
-  .text-section{
-    width: 100vw;
-    padding: 0;
-  }
-  .text {
-    width: 95vw;
-    padding: 0;
-  }
+ 
   .handshake-img{
     display: none;
   }
@@ -294,7 +295,7 @@ li {
 
   /* EMAIL SIGN IN (MAKE RESPONSIVE) */ 
 
-section{
+.form-section{
   background-color: #1450A3;
   color: #fff;
   font-family: 'Muli', sans-serif;
@@ -316,7 +317,8 @@ section{
     background: rgba(0,0,0,0.3);
 
   }
-  
+
+
   .form-container h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -367,6 +369,8 @@ section{
     color: lightblue;
     transform: translateY(-30px);
   }
+
+
 
 
 @media (max-width: 600px) {
@@ -422,7 +426,7 @@ section{
   @media(max-width: 1200px) {
     .ripple{
       padding: 10px;
-      font-size: 15px
+      font-size: 25px
     }
     
   }
@@ -431,6 +435,10 @@ section{
   @media(max-width: 600px) {
     button{
       justify-content: center;
+    }
+    .ripple{
+      padding: 10px;
+      font-size: 15px
     }
   }
  
@@ -470,22 +478,36 @@ hr {
   width: 100vw;
 }
 
+@media (max-width: 1200px) {
+  .contact{
+    padding: 0;
+  }
+  .contact h1{
+    font-size: 20px;
+    padding: 0;
+  }
+  .contact li {
+    padding: 0;
+  }
+}
+
 
 
 @media(max-width: 850px){
   .contact{
     width: auto;
+    padding: 0;
   }
   .contact ul{
     width: 400px;
+    text-align: center;
   }
   .contact li{
     padding: 0;
   }
   .contact h1{
-    display: none;
+    padding: 0;
   }
-  
 }
 
 
@@ -548,6 +570,7 @@ h1{
 
  /* ABOUT PAGE  */
 
+
  .about {
   text-align: center;
   height: 100vh;
@@ -576,4 +599,34 @@ h1{
   font-family: "scrivano", serif;
   font-weight: 700;
   font-style: normal;
+}
+
+@media(max-width: 1200px){
+  .about h1{
+    padding: 30px
+  }
+  .about p {
+    line-height: 1em;
+    font-size: 30px
+  }
+}
+
+@media(max-width: 600px){
+  .about h1{
+    padding-top: 20px
+  }
+  .about p {
+    line-height: 1em;
+    font-size: 20px
+  }
+}
+
+@media(max-height: 800px){
+  .about h1{
+    padding-top: 40px
+  }
+  .about p {
+    line-height: 1em;
+    font-size: 35px
+  }
 }

@@ -85,7 +85,7 @@ app.post('/subscribe', (req, res) => {
     fetch('https://us21.api.mailchimp.com/3.0/lists/5375ffd500', {
       method: 'POST',
       headers: {
-        Authorization: 'auth a7baf43c59f0d4adaefd0fc54e6b80d1-us21'
+        Authorization: process.env.API_KEY
       },
       body: postData
     })
